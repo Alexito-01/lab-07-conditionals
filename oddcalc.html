@@ -7,7 +7,7 @@
 	<script>
 		var numone = prompt("Give me a number: ");
 		var numtwo = prompt("Give me another number: ");
-		var expression = prompt("To multiply enter mul: \nTo divide enter div: ");
+		var expression = prompt("To multiply enter mul: \nTo divide enter div: \nTo Modulo enter mod: ");
 		var output;
 
 		if (expression === "mul")
@@ -18,6 +18,12 @@
 		else if (expression === "div")
 		{
 			output = numone / numtwo;
+			console.log("The answer is: " + output);
+
+		}
+		else if (expression === "mod")
+		{
+			output = numone % numtwo;
 			console.log("The answer is: " + output);
 
 		}
