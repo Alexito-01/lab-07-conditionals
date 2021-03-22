@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var numone = prompt("Give me a number: ");
+		var numtwo = prompt("Give me another number: ");
+		var expression = prompt("To multiply enter mul: \nTo divide enter div: ");
+		var output;
+
+		if (expression === "mul")
+		{
+			output = numone * numtwo;
+			console.log("The answer is: " + output);
+		}
+		else if (expression === "div")
+		{
+			output = numone / numtwo;
+			console.log("The answer is: " + output);
+
+		}
+		else
+		{
+			console.log("Sorry I don't understand");
+		}
+	</script>
+</body>
+</html>
