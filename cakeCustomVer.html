@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	
+	<script type="text/javascript">
+	const imageURLC = "https://pbs.twimg.com/media/EuSQ2-uVoAMhVTA.jpg"
+	const imageURL = "https://i.redd.it/kvt962bvxaz51.jpg";
+
+	swal("Do you want cake?", {
+  		buttons: {
+  			yes: "Yes",
+  			maybe: "Maybe",
+  			no: true, 
+  			},
+		})
+	.then((value) => {
+  		switch (value) {
+ 
+    	case "yes":
+      		swal({
+		    	title: "Here you go! You gained 500 XP!",
+    			icon: imageURLC,
+  			});
+      		break;
+ 
+    	case "maybe":
+      		swal("Okay come back later then >w<");
+      		break;
+ 
+    	default:
+      		swal("Okay, maybe next time.");
+  			}
+	});
+	</script>
+</body>
+</html>
